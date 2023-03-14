@@ -2,7 +2,7 @@
  name: Reactor done
  jobs:
    build-job:
-     name: Build .NETs project
+     name: Build .NET project
      runs-on: ubuntu-latest
      container: mcr.microsoft.com/dotnet/sdk:7.0
      steps:
