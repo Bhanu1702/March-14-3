@@ -7,12 +7,12 @@
      container: mcr.microsoft.com/dotnet/sdk:6.0
      steps:
        -  run: dotnet --version
-          name: Check dotnet version
+          name: Check .NET version
        -  uses: actions/checkout@v3
           name: Checkout Code
        -  run: |
-            dotnet publish
-            --configuration Release
+            dotnet publish \
+            --configuration Release \
             --output out
           name: Publish .NET web application
              
