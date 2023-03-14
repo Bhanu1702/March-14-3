@@ -4,7 +4,7 @@
    build-job:
      name: Build .NET project
      runs-on: ubuntu-latest
-     container: mcr.microsoft.com/dotnet/sdk/5.0
+     container: mcr.microsoft.com/dotnet/sdk:5.0
      steps:
        -  run: dotnet --version
           name: Check dotnet version
