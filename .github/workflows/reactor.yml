@@ -8,3 +8,11 @@
      steps:
        -  run: dotnet --version
           name: Check dotnet version
+       -  uses: actions/checkout@v3
+          name: Checkout Code
+       -  run: |
+            dotnet publish
+            --configuration Release
+            --output out
+          name: Publish .NET web application
+             
